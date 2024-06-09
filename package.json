@@ -1,0 +1,36 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baole1102/nodejs.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "BaoLVN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baole1102/nodejs/issues"
+  },
+  "homepage": "https://github.com/baole1102/nodejs#readme",
+  "dependencies": {
+    "consolidate": "^1.0.3",
+    "dotenv": "16.0.3",
+    "ejs": "3.1.8",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  }
+}
