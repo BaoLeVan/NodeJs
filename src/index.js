@@ -7,15 +7,9 @@ const { log } = require('console');
 const webRoutes = require('./routes/web');
 const connection = require('./config/db');
 
-console.log(process.env);
-connection.query('SELECT * FROM users', function(error, results, fields) {
-	if(error)
-		throw error;
-		results.forEach(result => {
-			console.log(result);
-		});
-});
-
+// cofig request.body
+app.use(express.urlencoded());
+app.use(express.json());
 
 // config .env
 require('dotenv').config();
